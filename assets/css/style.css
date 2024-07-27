@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+#note{
+    z-index: 999;
+    transition: all .3s ease-in-out;
+}
+nav .bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .bar .logo{
+    width: 310px;
+    cursor: pointer;
+}
+nav .links{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 140px;
+    padding-left: 10px;
+}
+nav .links li{
+    list-style: none;
+    margin-left: 20px;
+}
+nav .links li a{
+    color: rgb(228, 226, 226);
+    margin-left: 4px;
+    font-size: 12.5px;
+    font-weight: 500;    
+}
+nav .end i{
+    color: rgb(228, 179, 179);
+    /* margin-left: 1px; */
+    cursor: pointer;
+}
+nav .end{
+    padding: 6px;
+    border-left: 1px solid rgb(37, 37, 37);
+    margin-left: 10px;
+    float: right;
+}
+.icon-bar img{
+    display: none;
+}
+/* Navbar code ended */
+
+/* Banner code start */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 610px;
+    filter: brightness(80%);
+}
+.banner h1{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-weight: 600;
+    filter: brightness(100%);
+}
+/* Banner code ended */
+/* txt 1 code start  */
+#txt1 .head{
+    color: #b58b0b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#txt1 .para{
+    margin-top: 10px;
+    color: gray;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+}
+/* --------------=Txt 2================== */
+#txt2 .head{
+    color: #b58b0b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#txt2 .para{
+    color: gray;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+/* --------------=Txt 3================== */
+#txt3 .head{
+    color: #b58b0b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#txt3 .para{
+    color: gray;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 10px;
+    text-align: justify;
+}
+/* footer code start here */
+footer p{
+    color: rgb(138, 137, 137);
+    font-size: 14px;
+}
+/* Fixing Code */
+#fx-1{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+}
+#fx-spn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid gray;
+    color: grey;
+}
+#fx-spn:hover{
+    background-color: #b58b0b;
+    color: white;
+    cursor: pointer;
+}
+#fx-spn i{
+    font-size: 16px;
+    /* margin-top: 14px; */
+    cursor: pointer;
+}
+#fx-w{
+    position: fixed;
+    bottom: 70px;
+    padding: 4px 20px;
+    left: 10px;
+    width: 115px;
+    height: 41px;
+    background-color: #25d366;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#fx-w i{
+    font-size: 19px;
+    columns: white;
+}
+#fx-w span{
+    color: white;
+    margin-left: 12px;
+    font-size: 18px;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    transition: all 2s linear;
+    scroll-behavior: smooth;
+}
+.act{
+    transition: all 1s ease;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+/* Media query code */
+@media(max-width:900px){
+    nav .bar .links{
+    position: absolute;
+    margin-left: 0px;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    left: -100%;
+    top: 100%;
+    z-index: 999;
+    transition: all .3s ease;
+    }
+    nav .end {
+        margin-bottom: 20px;
+    }
+    nav .bar .logo{
+        width: 280px;
+    }
+    nav .links li {
+        list-style: none;
+        padding: 12px;
+        margin-left: 20px;
+    }
+    .icon-bar img{
+        color: white;
+        font-size: 24px;
+        position: absolute;
+        right: 8%;
+        top: 35%;
+        display: block;
+    }
+    #cross{
+        display: none;
+    }
+    nav .links li a {
+        font-size: 17px;
+    }
+}
+@media(max-width:750px){
+    .banner h1{
+        font-size: 30px;
+    }
+}
+@media(max-width:400px){
+    .banner h1{
+        font-size: 24px;
+    }
+}
+@media(max-width:576px){
+    .banner{
+        background-image: url(../img/New\ Project.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: 610px; */
+        filter: brightness(80%);
+    }
+}
